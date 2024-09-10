@@ -1,0 +1,14 @@
+
+.nav-list {
+  padding: 30px;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+}
+
+.nav-link:hover {
+  color: gray;
+}

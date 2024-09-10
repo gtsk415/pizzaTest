@@ -1,0 +1,13 @@
+.offers__container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: 
+    "card card cart"
+    "card card .";
+  
+  gap: 15px;
+}
+
+.main-card {
+  grid-area: card;
+}
