@@ -1,14 +1,14 @@
 
-.nav-list {
+.nav__list {
   padding: 30px;
   display: flex;
   gap: 15px;
 }
 
-.nav-link {
+.nav__link {
   text-transform: uppercase;
 }
 
-.nav-link:hover {
+.nav__link:hover {
   color: gray;
 }

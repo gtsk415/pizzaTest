@@ -13,115 +13,60 @@
 <body>
   <header class="header">
     <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="" class="nav-link">комбо</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">римская пицца</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">пицца</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">закуски</a>
-        </li>
-        <li class="nav-item">
-          <a href="" class="nav-link">бургеры</a>
-        </li>
-      </ul>
+      <div class="container">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link">комбо</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">римская пицца</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">пицца</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">закуски</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">бургеры</a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
-  <section class="offers">
-    <div class="container offers__container">
-      <div class="main-card">
-        <div class="card">
-          <div class="card__top">
-            <img src="" alt="" class="card__image">
-          </div>
-          <div class="card__label"></div>
-          <div class="card__bottom">
-            <h4 class="card__title">Филадельфия хит ролл</h4>
-            <span class="card__desc">6шт</span>
-            <div class="card__details--wrapper">
-              <div class="counter counter--wrapper">
-                <div class="counter__control" data-action="minus">-</div>
-                <div class="counter__current" data-counter>1</div>
-                <div class="counter__control" data-action="plus">+</div>
-              </div>
-              <div class="card__price">
-                <div class="price__weight">205г.</div>
-                <div class="price__currency">250₽</div>
-              </div>
+  <section class="main">
+    <div class="container main-container">
+
+      <div class="main__left">
+        <div class="card__list">
+          <div class="card">
+            <div class="card__top">
+              <img src="/image/1" alt="" class="card__image">
+              <div class="card__label"></div>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <img src="" alt="" class="card__image">
-          </div>
-          <div class="card__label"></div>
-          <div class="card__bottom">
-            <h4 class="card__title">Филадельфия хит ролл</h4>
-            <span class="card__desc">6шт</span>
-            <div class="card__details--wrapper">
-              <div class="counter counter--wrapper">
-                <div class="counter__control" data-action="minus">-</div>
-                <div class="counter__current" data-counter>1</div>
-                <div class="counter__control" data-action="plus">+</div>
+            <div class="card__bottom">
+              <h4 class="card__title">Филадельфия</h4>
+              <div class="card__descr">6шт</div>
+              <div class="card__details-wrapper">
+                <div class="counter-wrapper">
+                  <div class="counter__control" data-action="minus">-</div>
+                  <div class="counter__current" data-counter>1</div>
+                  <div class="counter__control" data-action="plus">+</div>
+                </div>
+                <div class="price">
+                  <div class="price__weight">205г.</div>
+                  <div class="price__currency">250 ₽</div>
+                </div>
               </div>
-              <div class="card__price">
-                <div class="price__weight">205г.</div>
-                <div class="price__currency">250₽</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <img src="" alt="" class="card__image">
-          </div>
-          <div class="card__label"></div>
-          <div class="card__bottom">
-            <h4 class="card__title">Филадельфия хит ролл</h4>
-            <span class="card__desc">6шт</span>
-            <div class="card__details--wrapper">
-              <div class="counter counter--wrapper">
-                <div class="counter__control" data-action="minus">-</div>
-                <div class="counter__current" data-counter>1</div>
-                <div class="counter__control" data-action="plus">+</div>
-              </div>
-              <div class="card__price">
-                <div class="price__weight">205г.</div>
-                <div class="price__currency">250₽</div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card__top">
-            <img src="" alt="" class="card__image">
-          </div>
-          <div class="card__label"></div>
-          <div class="card__bottom">
-            <h4 class="card__title">Филадельфия хит ролл</h4>
-            <span class="card__desc">6шт</span>
-            <div class="card__details--wrapper">
-              <div class="counter counter--wrapper">
-                <div class="counter__control" data-action="minus">-</div>
-                <div class="counter__current" data-counter>1</div>
-                <div class="counter__control" data-action="plus">+</div>
-              </div>
-              <div class="card__price">
-                <div class="price__weight">205г.</div>
-                <div class="price__currency">250₽</div>
-              </div>
+              <button class="card__button">В корзину</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="cart">
+      <div class="main__right">
+        <div class="cart">
 
+        </div>
       </div>
     </div>
   </section>

@@ -1,3 +1,48 @@
-.card {
-  outline: 1px solid black;
+.card__top {
+  margin-bottom: 15px;
+}
+.card__image {
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* .card__label {
+
+} */
+
+.card__title {
+  margin-bottom: 10px;
+}
+
+.card__descr {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+/* .card__details-wrapper {
+
+} */
+
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.counter__control {
+  padding-top: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(212, 212, 212);
+  text-align: center;
+
+}
+
+.counter__current {
+  padding-top: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(212, 212, 212);
+  text-align: center;
 }
