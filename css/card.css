@@ -1,3 +1,8 @@
+.card {
+  padding: 15px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
 .card__top {
   margin-bottom: 15px;
 }
@@ -36,7 +41,11 @@
   height: 25px;
   background-color: rgb(212, 212, 212);
   text-align: center;
+  cursor: pointer;
+}
 
+.counter__control:hover {
+  background-color: rgb(241, 183, 116);
 }
 
 .counter__current {
@@ -46,3 +55,10 @@
   background-color: rgb(212, 212, 212);
   text-align: center;
 }
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+

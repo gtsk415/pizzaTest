@@ -5,13 +5,11 @@
 
 .main__left {
   width: 70%;
-  background-color: antiquewhite;
   padding: 15px;
 }
 
 .main__right {
   width: 30%;
-  background-color: rgb(247, 166, 166);
   padding: 15px;
 }
 
