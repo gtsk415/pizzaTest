@@ -1,0 +1,36 @@
+const cartWrapper = document.querySelector('.cart-wrapper');
+
+window.addEventListener('click', function(e) {
+  if (e.target.hasAttribute('data-cart')) {
+    const card = e.target.closest('.card');
+
+    const productInfo = {
+      id: card.dataset.id,
+      imgSrc: card.querySelector('.product-img').getAttribute('src'),
+      title: card.querySelector('.cart-item__title').innerText,
+      itemsInBox: card.querySelector('.card__descr').innerText,
+      weight: card.querySelector('.price__weight').innerText,
+      currency: card.querySelector('.price__currency').innerText,
+      counter: card.querySelector('[data-counter]').innerText,
+
+    };
+
+
+    const cartItemHTML = `<div class="cart">
+        <div class="cart-item" data-id=${productInfo.id}>
+            <div class="cart-item__top">
+              <div class="cart-item__img">
+                <img src=${productInfo.imgSrc} alt="">
+              </div>
+              <div class="cart-item__desc">
+                <div class="cart-item__title">${productInfo.title}</div>
+                <div class="cart-item__weight">${productInfo.weight}</div>
+              </div>
+            </div>
+          </div>
+        </div>`;
+  }
+
+    cartWrapper.insertAdjacentHTML('beforeend', cartItemHTML);
+
+})

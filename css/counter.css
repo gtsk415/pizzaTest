@@ -1,0 +1,26 @@
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.counter__control {
+  padding-top: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(212, 212, 212);
+  text-align: center;
+  cursor: pointer;
+}
+
+.counter__control:hover {
+  background-color: rgb(241, 183, 116);
+}
+
+.counter__current {
+  padding-top: 4px;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(212, 212, 212);
+  text-align: center;
+}
