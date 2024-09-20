@@ -5,8 +5,7 @@
 }
 
 .main__right .card {
-  max-width: 260px;
-  
+  max-width: 310px;
 }
 
 .card__top {
@@ -20,6 +19,8 @@
 /* .card__label {
 
 } */
+
+
 
 .card__title {
   margin-bottom: 10px;
@@ -46,3 +47,4 @@
   justify-content: center;
   align-items: center;
  }
+
