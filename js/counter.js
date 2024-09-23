@@ -34,5 +34,6 @@ window.addEventListener('click', function(e) {
       counter.innerText = --counter.innerText;
     }
   }
+  
 });
  
