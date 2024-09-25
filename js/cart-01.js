@@ -16,7 +16,6 @@ window.addEventListener('click', function(e) {
     };
 
     const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
-    console.log(itemInCart);
 
     if (itemInCart) {
       const counterEl = itemInCart.querySelector('[data-counter]');
@@ -57,3 +56,5 @@ window.addEventListener('click', function(e) {
   };
 
 })
+
+
