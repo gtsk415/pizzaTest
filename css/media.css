@@ -45,8 +45,9 @@
     font-size: 12px;
   }
 
-  .alert {
+  .cart-alert {
     font-size: 14px;
+    padding: 12px 5px;
   }
 
   .cart-item__img {
@@ -68,6 +69,10 @@
     width: 20px;
     height: 20px;
     font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 14px;
   }
 
 };

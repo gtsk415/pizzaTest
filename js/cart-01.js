@@ -2,8 +2,15 @@ const cartWrapper = document.querySelector('.cart-wrapper');
 
 
 window.addEventListener('click', function(e) {
+
   if (e.target.hasAttribute('data-cart')) {
     const card = e.target.closest('.card');
+
+    
+    const cartStatus = {
+      deliveryCost: card.querySelector('.delivery-coasr'),
+      totalPrice: card.querySelector('.totta-price'),
+    }
 
     const productInfo = {
       id: card.dataset.id,
@@ -53,8 +60,10 @@ window.addEventListener('click', function(e) {
       cartWrapper.insertAdjacentHTML('beforeend', cartHtml);
     }
 
+    toggleCartStatus();
   };
-
+  
+   
 })
 
 
