@@ -16,12 +16,6 @@
   object-fit: cover;
 }
 
-/* .card__label {
-
-} */
-
-
-
 .card__title {
   margin-bottom: 10px;
 }
@@ -31,10 +25,6 @@
   color: gray;
   margin-bottom: 10px;
 }
-
-/* .card__details-wrapper {
-
-} */
 
 .card-price{
   display: flex;

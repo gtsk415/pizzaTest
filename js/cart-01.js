@@ -6,12 +6,6 @@ window.addEventListener('click', function(e) {
   if (e.target.hasAttribute('data-cart')) {
     const card = e.target.closest('.card');
 
-    
-    const cartStatus = {
-      deliveryCost: card.querySelector('.delivery-coasr'),
-      totalPrice: card.querySelector('.totta-price'),
-    }
-
     const productInfo = {
       id: card.dataset.id,
       imgSrc: card.querySelector('.product-img').getAttribute('src'),
@@ -22,43 +16,47 @@ window.addEventListener('click', function(e) {
       counter: card.querySelector('[data-counter]').innerText,
     };
 
+
     const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
 
     if (itemInCart) {
       const counterEl = itemInCart.querySelector('[data-counter]');
       counterEl.innerText = parseInt(counterEl.innerText) + parseInt(productInfo.counter);
     } else {
-      const cartHtml = `<div class="cart-item" data-id=${productInfo.id}>
-      <div class="cart-item__img">
-        <img src=${productInfo.imgSrc} alt="">
-      </div>
-      <div class="cart-item__content">
-        <div class="cart-item__desc">
-          <div class="cart-item__title">${productInfo.title}</div>
-          <div class="cart-item__weight">${productInfo.weight}</div>
-  
-          <!-- cart-item__details -->
-          <div class="cart-item__details">
-  
-            <div class="card__counter counter-wrapper">
-              <div class="counter__control" data-action="minus">-</div>
-              <div class="counter__current" data-counter="">${productInfo.counter}</div>
-              <div class="counter__control" data-action="plus">+</div>
-            </div>
-  
-            <div class="price">
-              <div class="price__currency">${productInfo.currency}</div>
-            </div>
-  
-          </div>
-          <!-- // cart-item__details -->
-  
+        const cartHtml = `<div class="cart-item" data-id=${productInfo.id}>
+        <div class="cart-item__img">
+          <img src=${productInfo.imgSrc} alt="">
         </div>
-      </div>
-        </div>`;
-  
-      cartWrapper.insertAdjacentHTML('beforeend', cartHtml);
-    }
+        <div class="cart-item__content">
+          <div class="cart-item__desc">
+            <div class="cart-item__title">${productInfo.title}</div>
+            <div class="cart-item__weight">${productInfo.weight}</div>
+    
+            <!-- cart-item__details -->
+            <div class="cart-item__details">
+    
+              <div class="card__counter counter-wrapper">
+                <div class="counter__control" data-action="minus">-</div>
+                <div class="counter__current" data-counter="">${productInfo.counter}</div>
+                <div class="counter__control" data-action="plus">+</div>
+              </div>
+    
+              <div class="price">
+                <div class="price__currency">${productInfo.currency}</div>
+              </div>
+    
+            </div>
+            <!-- // cart-item__details -->
+    
+          </div>
+        </div>
+          </div>`;
+    
+        cartWrapper.insertAdjacentHTML('beforeend', cartHtml);
+    };
+
+    
+
 
     toggleCartStatus();
   };
