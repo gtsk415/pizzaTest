@@ -56,9 +56,8 @@ window.addEventListener('click', function(e) {
     };
 
     
-
-    calcTotalPrice();
     toggleCartStatus();
+    calcCartPriceAndDelivery();
   };
   
    

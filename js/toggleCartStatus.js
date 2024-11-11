@@ -14,7 +14,6 @@ function toggleCartStatus() {
     cartWrapperBadge.classList.remove('none');
     orderForm.classList.add('none');
     orderCost.classList.add('none');
-    
   }
 
 }

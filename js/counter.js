@@ -33,13 +33,19 @@ window.addEventListener('click', function(e) {
 
     if (counter.innerText > 1) {
       counter.innerText = --counter.innerText;
-    } else  if (e.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 1) {
+    } else if (e.target.closest('.cart-wrapper') && parseInt(counter.innerText) === 1) {
       e.target.closest('.cart-item').remove();
 
       // только для нажатий на минус в корзине
       toggleCartStatus();
+
+      calcCartPriceAndDelivery();
     }
     
+  }
+
+  if (e.target.hasAttribute('data-action') && e.target.closest('.cart-wrapper')) {
+    calcCartPriceAndDelivery();
   }
   
 });

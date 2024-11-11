@@ -1,4 +1,83 @@
 
+@media (max-width: 992px) {
+
+  /* card */
+  .card__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+  }
+
+  .card__title {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  .card__descr {
+    font-size: 12px;
+  }
+
+  .price__weight {
+    font-size: 14px;
+  }
+
+  .price__currency {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+
+  /* CART */
+
+  .main__right .card {
+    padding: 10px;
+  }
+  
+  .cart-item {
+    padding: 10px;
+  }
+
+  .cart-item__title {
+    font-size: 12px;
+  }
+
+  .cart-alert {
+    font-size: 14px;
+    padding: 12px 5px;
+  }
+
+  .cart-item__img {
+    max-width: 48px;
+  }
+
+  .cart-item__details .price__currency {
+    font-size: 12px;
+  }
+
+  .cart-item__details .counter__control {
+    padding-top: 2px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .cart-item__details .counter__current {
+    padding-top: 4px;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+}
+
 @media (max-width: 768px) {
   body {
     padding: 0 20px;
@@ -77,83 +156,4 @@
   }
 
 
-};
-
-@media (max-width: 992px) {
-
-  /* card */
-  .card__list {
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 15px;
-    row-gap: 20px;
-  }
-
-  .card__title {
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-
-  .card__descr {
-    font-size: 12px;
-  }
-
-  .price__weight {
-    font-size: 14px;
-  }
-
-  .price__currency {
-    font-size: 14px;
-  }
-
-  .btn {
-    padding: 5px 10px;
-    font-size: 14px;
-  }
-
-
-  /* CART */
-
-  .main__right .card {
-    padding: 10px;
-  }
-  
-  .cart-item {
-    padding: 10px;
-  }
-
-  .cart-item__title {
-    font-size: 12px;
-  }
-
-  .cart-alert {
-    font-size: 14px;
-    padding: 12px 5px;
-  }
-
-  .cart-item__img {
-    max-width: 48px;
-  }
-
-  .cart-item__details .price__currency {
-    font-size: 12px;
-  }
-
-  .cart-item__details .counter__control {
-    padding-top: 2px;
-    width: 20px;
-    height: 20px;
-  }
-
-  .cart-item__details .counter__current {
-    padding-top: 4px;
-    width: 20px;
-    height: 20px;
-    font-size: 12px;
-  }
-
-  .form-control {
-    font-size: 14px;
-  }
-
-};
-
+}
